@@ -6,7 +6,7 @@ permalink: /guides/base-and-override-templates/
 
 #Base and Override Templates
 
-An important need in developing a multi-page web application is to have common elements of the pages defined just once and shared by all pages (DRY=Don't Repeat Yourself). Dust provides this with the concept of blocks, base, and override templates. Consider a common case where several pages share a header and footer but have different body content.
+An important need in developing a multi-page web application is to have common elements of the pages defined just once and shared by all pages (<a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself\" target="_blank">DRY - Don't repeat yourself</a>). Dust provides this with the concept of blocks, inline-partials, and base and override templates. Consider a common case where several pages share a header and footer but have different body content.
 
 Blocks in the base template can contain default content and a child template can override that content. A block tag has the form of {+name}default Content{/name}. In the following example, the base template has three blocks: pageHeader, bodyContent, and pageFooter. The pageHeader and pageFooter have default content that is shown if the child template does not override them.  You'll notice below that without a child template, the base template renders the default header and footer content, but no body content.
 
@@ -48,4 +48,4 @@ Now that we have defined a base template with the named blocks pageHeader, bodyC
 <dust-demo-json>{}</dust-demo-json>
 </dust-demo>
 
-Note that inline partials like {<name}xxx{/name}, define "name" globally within the template chain. While this might be useful, remember the pains caused by global variables in JavaScript and use these with the knowledge that others can stomp on your chosen name inadvertently.
+One thing to be wary of is that the name given to inline partials are global to that template chain.  For example, {<name}xxx{/name}, defines the generic "name" as an inline partial. This may be what you want, but remember the pains caused by global variables in JavaScript.  Only use generic names for inline partials with the knowledge that a template later in the chain can override it.
