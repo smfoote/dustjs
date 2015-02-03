@@ -1,0 +1,22 @@
+@import "compass/css3";
+
+///////////////////////
+//Font-face Includes //
+///////////////////////
+@include font-face("Dosis Light",
+                   font-files("../../fonts/dosis-light-webfont.woff",
+                              "../../fonts/dosis-light-webfont.ttf",
+                              "../../fonts/dosis-light-webfont.svg"),
+                   "../../fonts/dosis-light-webgont.eot");
+
+////////////////
+//Font Mixins //
+////////////////
+@mixin Dosis-light() {
+  font-family: "Dosis Light";
+}
+
+///////////////
+//Font Sizes //
+///////////////
+$tagline-font-size: 32px;

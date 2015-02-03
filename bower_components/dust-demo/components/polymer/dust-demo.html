@@ -38,9 +38,9 @@
       pre {
         min-height: 120px;
         padding: 10px;
-        margin: 10px 0;
-        background-color: #222;
-        color: #72CC72;
+        margin: 10px 0 40px 0px;
+        background-color: #323232;
+        color: #FFF;
         font-family: Consolas, Courier, monospace;
         font-size: 15px;
         white-space: pre-wrap;
@@ -58,8 +58,8 @@
 
       #devToggle {
         position: absolute;
-        top: 50px;
-        right: 20px;
+        top: 30px;
+        right: 26px;
         opacity: 0;
       }
 
@@ -82,18 +82,21 @@
 
       :host /deep/ h3 {
         position: absolute;
-        top: 0;
-        right: 0;
+        z-index: 1;
+        top: -24px;
+        right: -8px;
         padding: 5px;
         margin: 0;
+        background: #00698c;
         color: #FFF;
-        border: 1px dashed #72CC72;
-        border-right: none;
-        border-top: none;
         font-family: Helvetica, sans-serif;
         font-size: 15px;
         font-weight: normal;
+        -webkit-box-shadow: 0 0 2px #939393;
+        -moz-box-shadow: 0 0 2px #939393;
+        box-shadow: 0 0 2px #939393;
       }
+
     </style>
   </template>
 

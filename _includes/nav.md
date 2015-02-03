@@ -1,15 +1,16 @@
-<header>
-  <h1><a href="/">DustJS</a></h1>
-  <h2>Asynchronous templating for Node.js and the browser</h2>
-</header>
+
 <nav>
-  <ul>
+  <header>
+    <h1><a href="/">Dust.js</a></h1>
+    <h2 class="tagline">Asynchronous templates for the browser and nodejs</h2>
+  </header>
+  <ul class="main-nav">
+    <li><a class="nav-button" href="/guides/setup">Download</a></li>
     <li><a href="/about">About</a></li>
     <li><a href="/guides/getting-started">Getting Started</a></li>
     <li class="sub">
       <input type="checkbox" name="nav-radio" id="guide-radio"><label for="guide-radio">Guides</label>
       <ul>
-      <li><a href="/guides/setup">Download &amp; Setup</a></li>
       <li><a href="/guides/getting-started">Getting Started</a></li>
       <li><a href="/guides/context-helpers">Context Helpers</a></li>
       <li><a href="/guides/dust-helpers">Dust Helpers</a></li>
@@ -32,6 +33,5 @@
       </ul>
     </li>
     <li><a href="https://github.com/linkedin/dustjs">Contributing</a></li>
-    <li><a class="nav-button" href="">Download</a></li>
   </ul>
 </nav>

@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Dosis Light";
+  src: url('/fonts/../../fonts/dosis-light-webgont.eot');
+  src: url('/fonts/../../fonts/dosis-light-webgont.eot?#iefix') format('embedded-opentype'), url('/fonts/../../fonts/dosis-light-webfont.woff') format('woff'), url('/fonts/../../fonts/dosis-light-webfont.ttf') format('truetype'), url('/fonts/../../fonts/dosis-light-webfont.svg') format('svg');
+}
