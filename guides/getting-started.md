@@ -36,10 +36,10 @@ If you need to reference values within nested objects, you can use dot-notation 
 <dust-tutorial-answer>Hello, Dusty</dust-tutorial-answer>
 </dust-tutorial>
 
-Learn more about [Dust References](/docs/syntax#references).
+Learn more about [Dust References](/docs/syntax#reference).
 
-### Conditionals
-Dust can include content conditionally with `?` (exists) and `^` (not exists). Given a reference, the conditionals check if the value of that reference is truthy or falsy, then output the content accordingly. See the [conditionals syntax documentation](/docs/syntax#conditionals) for more information on what is truthy and what is falsy in Dust.
+###Conditionals
+Dust can include content conditionally with `?` (exists) and `^` (not exists). Given a reference, the conditionals check if the value of that reference is truthy or falsy, then output the content accordingly. See the [conditionals syntax documentation](/docs/syntax#exists) for more information on what is truthy and what is falsy in Dust.
 
 <dust-tutorial template-name="reference">
 <dust-demo-template>&lt;input type="checkbox"{^isSelected} selected{/isSelected}&gt;</dust-demo-template>
@@ -78,7 +78,7 @@ Sections, which work a lot like conditionals, are a useful alternative to the so
 However, if Dust doesn't find a reference in a given context, it will look into all of the data's parent contexts before it gives up.
 
 <dust-tutorial template-name="reference-lookup">
-<dust-demo-template>Hello, {name} {#friend}{name} {PUT\_YOUR\_ANSWER\_HERE}{/friend}. That's my name, too.</dust-demo-template>
+<dust-demo-template>Hello, {name} {#friend}{name} [[ PUT YOUR ANSWER HERE ]]{/friend}. That's my name, too.</dust-demo-template>
 <dust-demo-json>{
   "name": "John",
   "nickname": "Jingleheimer Schmidt",
@@ -97,7 +97,7 @@ You can use `{.}` to reference the current item in the loop. Below is an example
 
 <dust-tutorial template-name="loop">
 <dust-demo-template>&lt;ul&gt;
-  {#languages}&lt;li&gt;[YOUR CODE GOES HERE]&lt;/li&gt;{/languages}
+  {#languages}&lt;li&gt;[[ YOUR CODE GOES HERE ]]&lt;/li&gt;{/languages}
 &lt;/ul&gt;</dust-demo-template>
 <dust-demo-json>{
   "languages": [
@@ -115,7 +115,7 @@ You can use key value references when the array contains objects. Below is an ex
 <dust-tutorial template-name="loop">
 <dust-demo-template>&lt;ul&gt;
   {#languages}
-    &lt;li&gt;[INSERT\_LANGUAGE\_NAME\_HERE] by {#creators}{.}{@sep} and {/sep}{/creators}&lt;/li&gt;
+    &lt;li&gt;[[ INSERT LANGUAGE NAME HERE ]] by {#creators}{.}{@sep} and {/sep}{/creators}&lt;/li&gt;
   {/languages}
 &lt;/ul&gt;</dust-demo-template>
 <dust-demo-json>{
