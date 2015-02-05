@@ -75,7 +75,7 @@ permalink: /docs/helper-api/
 ### Example
 In this example, we will write a helper that will add a period to the end or beginning of the body depending on a parameter. 
 
-#### Javacript function definition for a helper
+#### JavaScript function definition for a helper
 
 ```
 dust.helpers.period = function(chunk, context, bodies, params) {

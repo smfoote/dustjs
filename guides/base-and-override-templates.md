@@ -4,7 +4,7 @@ layout: guides
 permalink: /guides/base-and-override-templates/
 ---
 
-#Base and Override Templates
+# Base and Override Templates
 
 An important need in developing a multi-page web application is to have common elements of the pages defined just once and shared by all pages (<a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself\" target="_blank">DRY - Don't repeat yourself</a>). Dust provides this with the concept of blocks, inline-partials, and base and override templates. Consider a common case where several pages share a header and footer but have different body content.
 
