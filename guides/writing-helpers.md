@@ -4,4 +4,4 @@ layout: guides
 permalink: /guides/writing-helpers/
 ---
 
-#Writing Helpers
+# Writing Helpers
