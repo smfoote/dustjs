@@ -10,7 +10,6 @@ title: Guides | DustJS
 - [@select and @eq](/guides/select-and-eq)
 - [Using Filters](/guides/using-filters)
 - [Partials](/guides/partials)
-- [Layouts](/guides/layouts)
 - [Base and override templates](/guides/base-and-override-templates)
 - [Tips and Tricks](/guides/tips-and-tricks)
 - [Advanced Topics](/guides/advanced-topics)

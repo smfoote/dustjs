@@ -15,7 +15,6 @@
       <li><a href="/guides/dust-helpers">Dust Helpers</a></li>
       <li><a href="/guides/using-filters">Using Filters</a></li>
       <li><a href="/guides/partials">Partials</a></li>
-      <li><a href="/guides/layouts">Layouts</a></li>
       <li><a href="/guides/base-and-override-templates">Base and override templates</a></li>
       <li><a href="/guides/tips-and-tricks">Tips and Tricks</a></li>
       <li><a href="/guides/advanced-topics">Advanced Topics</a></li>
