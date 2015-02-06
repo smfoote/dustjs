@@ -5,6 +5,7 @@ permalink: /docs/helper-api/
 ---
 
 ## Dust Helpers
+
 ### Function definition
 ```
     dust.helpers.myHelper = function(chunk, context, bodies, params) {
@@ -12,7 +13,9 @@ permalink: /docs/helper-api/
        return chunk;
     }
 ```
+
 ### Parameters
+
 * chunk {Chunk}: An object created by the dust core that holds the currently accumulating output of the template render process.
     * **Instance Functions**
         * write - Write out a plain string to the chunk
