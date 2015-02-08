@@ -1,11 +1,10 @@
 
 <nav>
   <header>
-    <h1><a href="/">Dust.js</a></h1>
+    <h1><a href="/">DustJS</a></h1>
     <h2 class="tagline">Asynchronous templates for the browser and nodejs</h2>
   </header>
   <ul class="main-nav">
-    <li><a class="nav-button" href="/guides/setup">Download</a></li>
     <li><a href="/about">About</a></li>
     <li><a href="/guides/getting-started">Getting Started</a></li>
     <li class="sub">
