@@ -1,17 +1,12 @@
 nav {
   @include even-shadow($dark-shadow, $shadow-large-size);
-  width: 253px;
+  width: $nav-width;
   height: 100%;
   background: $brand-graphite;
   position: fixed;
 
   ul.main-nav > li {
     padding: 10px 0px 0px $nav-indent;
-
-    &:first-child {
-      padding: 0px $nav-indent;
-      margin-bottom: $header-margin-bottom;
-    }
 
     a {
       @include styleguide(medium muted headline in a module, link in a module);
@@ -23,7 +18,7 @@ nav {
     }
 
     label {
-      color: #666;
+      color: tint($brand-light-graphite, 30%);
       cursor: pointer;
 
       &:hover {

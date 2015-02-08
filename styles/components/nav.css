@@ -5,7 +5,7 @@ Error: Undefined mixin 'even-shadow'.
 
 1: nav {
 2:   @include even-shadow($dark-shadow, $shadow-large-size);
-3:   width: 253px;
+3:   width: $nav-width;
 4:   height: 100%;
 5:   background: $brand-graphite;
 6:   position: fixed;
@@ -66,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'even-shadow'.\A         on line 2 of /Users/jabelmon/Documents/Development/Workspace/dustjs/scss/components/nav.scss, in `even-shadow'\A         from line 2 of /Users/jabelmon/Documents/Development/Workspace/dustjs/scss/components/nav.scss\A \A 1: nav {\A 2:   @include even-shadow($dark-shadow, $shadow-large-size);\A 3:   width: 253px;\A 4:   height: 100%;\A 5:   background: $brand-graphite;\A 6:   position: fixed;\A 7: "; }
+  content: "Error: Undefined mixin 'even-shadow'.\A         on line 2 of /Users/jabelmon/Documents/Development/Workspace/dustjs/scss/components/nav.scss, in `even-shadow'\A         from line 2 of /Users/jabelmon/Documents/Development/Workspace/dustjs/scss/components/nav.scss\A \A 1: nav {\A 2:   @include even-shadow($dark-shadow, $shadow-large-size);\A 3:   width: $nav-width;\A 4:   height: 100%;\A 5:   background: $brand-graphite;\A 6:   position: fixed;\A 7: "; }
