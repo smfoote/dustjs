@@ -1,8 +1,0 @@
-@mixin brand-button($padding) {
-  text-decoration: none;
-  padding: $padding 2*$padding;
-  background: $brand-blue;
-  color: #FFF;
-  margin-left: $padding * -2;
-  @include border-radius(2*$padding);
-}

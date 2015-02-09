@@ -228,12 +228,12 @@ footer {
   padding: 17px 34px 34px 34px;
 }
 
-/* line 24, ../scss/main.scss */
+/* line 23, ../scss/main.scss */
 html {
   height: 100%;
 }
 
-/* line 28, ../scss/main.scss */
+/* line 27, ../scss/main.scss */
 body {
   /* [archetype:styleguide:begin] --- `large copy` --- */
   font-size: 16px;
@@ -245,12 +245,12 @@ body {
   background: #dddddd;
   font-family: 'Roboto', sans-serif;
 }
-/* line 34, ../scss/main.scss */
+/* line 33, ../scss/main.scss */
 body ul {
   list-style: none;
 }
 
-/* line 40, ../scss/main.scss */
+/* line 39, ../scss/main.scss */
 #body {
   overflow: hidden;
 }
