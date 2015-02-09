@@ -31,6 +31,13 @@
     color: $brand-light-graphite;
   }
 
+  h4 {
+    font-size: $subheadline-font-size - 4;
+    margin-bottom: $content-h1-margin-bottom - 8;
+    margin-top: $content-h1-margin-bottom/2;
+    color: $brand-light-graphite;
+  }
+
   h1, h2 {
     @include sub-section-headline();
     color: $brand-graphite;

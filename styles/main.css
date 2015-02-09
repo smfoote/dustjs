@@ -16,8 +16,9 @@ nav {
 /* line 8, ../scss/components/nav.scss */
 nav ul.main-nav > li {
   padding: 10px 0px 0px 72px;
+  color: white;
 }
-/* line 11, ../scss/components/nav.scss */
+/* line 12, ../scss/components/nav.scss */
 nav ul.main-nav > li a {
   /* [archetype:styleguide:begin] --- `medium muted headline in a module, link in a module` --- */
   font-size: 16px;
@@ -37,27 +38,20 @@ nav ul.main-nav > li a {
 nav ul.main-nav > li a.hover, nav ul.main-nav > li a:hover, nav ul.main-nav > li a.focus, nav ul.main-nav > li a:focus {
   text-decoration: underline;
 }
-/* line 15, ../scss/components/nav.scss */
-nav ul.main-nav > li a.nav-button {
-  text-decoration: none;
-  padding: 20px 40px;
-  background: #00698c;
-  color: #FFF;
-  margin-left: -40px;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
-  border-radius: 40px;
+/* line 17, ../scss/components/nav.scss */
+nav ul.main-nav > li > ul > li {
+  padding-left: 10px;
 }
-/* line 20, ../scss/components/nav.scss */
+/* line 21, ../scss/components/nav.scss */
 nav ul.main-nav > li label {
   color: #a5a5a5;
   cursor: pointer;
 }
-/* line 24, ../scss/components/nav.scss */
+/* line 25, ../scss/components/nav.scss */
 nav ul.main-nav > li label:hover {
   text-decoration: underline;
 }
-/* line 32, ../scss/components/nav.scss */
+/* line 33, ../scss/components/nav.scss */
 nav ul.main-nav > li.sub input {
   position: absolute !important;
   height: 1px;
@@ -73,15 +67,15 @@ nav ul.main-nav > li.sub input {
   /* [archetype:target:browser:begin] --- ie lte 7 --- */
   /* [archetype:target:browser:end]   --- ie lte 7 --- */
 }
-/* line 35, ../scss/components/nav.scss */
+/* line 36, ../scss/components/nav.scss */
 nav ul.main-nav > li.sub input:checked ~ ul {
   display: block;
 }
-/* line 38, ../scss/components/nav.scss */
+/* line 39, ../scss/components/nav.scss */
 nav ul.main-nav > li.sub input:checked ~ ul li {
-  padding-left: 20px;
+  padding-left: 10px;
 }
-/* line 44, ../scss/components/nav.scss */
+/* line 45, ../scss/components/nav.scss */
 nav ul.main-nav > li.sub ul {
   display: none;
 }
@@ -172,6 +166,13 @@ header h2.tagline {
   color: #7f7f7f;
 }
 /* line 34, ../scss/components/content.scss */
+#content h4 {
+  font-size: 16px;
+  margin-bottom: 24px;
+  margin-top: 16px;
+  color: #7f7f7f;
+}
+/* line 41, ../scss/components/content.scss */
 #content h1, #content h2 {
   border-bottom-width: 3px;
   border-style: solid;
@@ -179,16 +180,16 @@ header h2.tagline {
   color: #323232;
   padding-bottom: 15px;
 }
-/* line 40, ../scss/components/content.scss */
+/* line 47, ../scss/components/content.scss */
 #content code {
   color: #00698c;
 }
-/* line 44, ../scss/components/content.scss */
+/* line 51, ../scss/components/content.scss */
 #content a {
   color: #267f9d;
   text-decoration: none;
 }
-/* line 49, ../scss/components/content.scss */
+/* line 56, ../scss/components/content.scss */
 #content pre {
   -moz-box-shadow: inset 0 0 3px #939393;
   -webkit-box-shadow: inset 0 0 3px #939393;
@@ -198,7 +199,7 @@ header h2.tagline {
   color: #00698c;
   padding: 15px;
 }
-/* line 57, ../scss/components/content.scss */
+/* line 64, ../scss/components/content.scss */
 #content #parameters + ul > li > ul {
   -moz-box-shadow: inset 0 0 3px #939393;
   -webkit-box-shadow: inset 0 0 3px #939393;

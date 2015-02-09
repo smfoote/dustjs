@@ -7,14 +7,15 @@ nav {
 
   ul.main-nav > li {
     padding: 10px 0px 0px $nav-indent;
+    color: white;
 
     a {
       @include styleguide(medium muted headline in a module, link in a module);
       color: #FFF;
+    }
 
-      &.nav-button {
-        @include brand-button($brand-button-padding);
-      }
+    & > ul > li {
+      padding-left: $nav-sub-indent;
     }
 
     label {
