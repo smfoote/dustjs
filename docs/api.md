@@ -5,13 +5,16 @@ permalink: /docs/api/
 ---
 
 ## dust.compile
+
 ### Function call
 ```    
 dust.compile(content, templateName);
 ```
+
 ### Parameters
 * content {String}: The content of your dust template.
 * templateName {String}: The name under which the template will be registered.  This is the name you will use when rendering the template.
+
 ### Return Value
 * {String} Template compiled to JavaScript.
 
@@ -41,6 +44,7 @@ If you include the "compiled" output as part of a script block of JS that you lo
 All of these compiled templates are saved in the dust.cache Array under the name they were registered under, in this case, "intro".
 
 ## dust.loadSource
+
 ### Function call
 ```
 dust.loadSource(compiledOutput);
@@ -48,6 +52,7 @@ dust.loadSource(compiledOutput);
 
 ### Parameters
 * compiledOutput {String}: The compiled dust template
+
 ### Return Value
 * {Void}
 
@@ -59,10 +64,12 @@ dust.loadSource(compiledTemplate);
 ```
 
 ## dust.render
+
 ### Function call
 ```
 dust.render(templateName, data, callback);
 ```
+
 ### Parameters
 * templateName {String}: The registered name of the template to render.  This was the name given to the template at the compilation step.
 * data {Object}: The data to be used to populate the template.
@@ -72,6 +79,7 @@ dust.render(templateName, data, callback);
         * output {String} Contains the full output of the rendered template.  If error is non-empty, output will be empty.
     * **Return Value**
         * {Void}
+
 ### Return Value
 {Void}
 
@@ -89,6 +97,7 @@ dust.render("intro", {name: "Fred"}, function(error, output) {
 ```
 
 ## dust.stream
+
 ### Function call
 ```    
 var stream = dust.stream(templateName, data);
@@ -96,9 +105,11 @@ stream.on('data', dataCallback)
       .on('end', endCallback)
       .on('error', errorCallback);
 ```
+
 ### Parameters
 * templateName {String}: The registered name of the template to render.  This was the name given to the template at the compilation step.
 * data {Object}: The javascript context to be used to populate the template.
+
 ### Return Value
 * {Stream} An object that can be used to attach event callbacks to.
 
