@@ -170,7 +170,7 @@ You can set `key="full"` to print the full context, and `to="console"` to print 
 
 Remove this helper when you are done debugging.
 
-<dust-demo>
+<dust-demo template-name="helpers-contextdump">
 <dust-demo-template>
 {#houses.gryffindor}
   {! Default: key="current" and to="output" !}
